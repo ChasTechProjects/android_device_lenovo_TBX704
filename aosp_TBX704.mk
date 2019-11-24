@@ -25,13 +25,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/TBX704/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_TBX704
+PRODUCT_NAME := aosp_TBX704
 PRODUCT_DEVICE := TBX704
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo TB-X704F
